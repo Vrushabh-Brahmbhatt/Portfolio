@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+body{
+    background-color:black;
+    background-repeat: repeat;
+    background-size: 100%;
+
+}
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation{
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color:black;
+    color: white;
+    padding: 10px;
+}
+
+.first{
+    font-size: 18px;
+    font-weight: bold;
+    color: greenyellow;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+a.navi{   
+    color: white;
+    padding: 20px 18px;
+    text-decoration: none;
+}
+
+a.navi:hover{
+    color: greenyellow;
+    transition: all ease 0.2s;
+}
+
+.homePage{
+    display: flex;
+    color: white;
+    width: 70%;
+    padding: 217.5px 217.5px 0 217.5px;
+}
+
+.homePage img{
+    width: 270px;
+    margin: 60px;
+    border-radius: 50%;
+}
+
+.homePage h1{
+    text-align: left;
+    margin: 50px 70px 40px 30px;
+    font-size: 40px;
+}
+
+.homePage p{
+    display: flex;
+    font-size: 18px;
+    text-align: justify ;
+    margin: 0px 60px 25px 30px;
+}
+
+#Resume{
+    margin: 10px 30px;
+    padding: 12px 18px;
+    border:none;
+    border-radius: 50px;
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+#Resume:hover{
+    background-color: rgb(235, 255, 206);
+    transition: all ease 0.4s;
+}
+
+.aboutPage{
+    width:100%;
+    margin-top: 150px;
+}
+
+.aboutPage h1{
+    color: greenyellow;
+    text-align: center;
+    padding: 10px;
+    font-size: 40px;
+}
+
+.aboutInfo{
+    font-size: 18px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    padding: 50px;
+    text-align: justify;
+}
+
+#skills{
+    font-size: 24px;
+    text-align: left;
+    padding: 0;
+}
+
+.aboutInfo ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Projects{
+    margin-top: 150px;
+}
+
+.Projects h1{
+    color: greenyellow;
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.Projects p{
+    color: white;
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+}
+
+#project1, #project2{
+    justify-content: center;
+    display: flex;
+    color: white;
+    padding: 50px;
+}
+
+#project1 img, #project2 img{
+    width: 400px;
+    margin: 30px 150px;
+    border: solid greenyellow 1px;
+}
+
+#project1 h1, #project2 h1{
+    color: greenyellow;
+    font-size: 28px;
+    text-align: left;
+    padding: 30px 150px 50px 0;
+}
+
+#project1 p, #project2 p{
+    text-align: justify;
+    font-size: 18px;
+    padding: 0px 150px 50px 0;
+}
+
+#exp-head{
+    color: greenyellow;
+    text-align: center;
+    font-size: 40px;
+    margin: 150px 0 60px 0;
+    padding: 20px;
+}
+
+#exp-main h1{
+    color:greenyellow;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+#exp-main p{
+    color: white;
+    width: 510px;
+    text-align: justify;
+    margin: auto;
+}
+
+#Certi-head{
+    color: greenyellow;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.certifications p{
+    color:white;
+    text-align: center;
+    padding: 10px 10px 100px 10px;
+}
+
+.certiA, .certiB{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.certi img:hover{
+
+    transition: all ease 0.3s;
+}
+
+#contact-head{
+    color: greenyellow;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.contact p{
+    color:white;
+    text-align: center;
+    padding: 10px 10px 100px 10px;
+}
+
+#contact-info{
+    color: white;
+    background-color: greenyellow ;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+    margin: auto;
+    border-radius: 20px;
+}
+.mainFooter{
+    width: 100%;
+    background-color:black;
+    color: greenyellow;
+}
+
+.mainContainer{
+   padding: 30px;
+   font-size: 12px;
+}
+
+/* button{
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 12px 20px;
+    margin: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    transition: all ease 0.6s
+}
+
+button:hover{
+    box-shadow: 5px 5px 0px;
+} */
+
+
+@media screen and (max-width: 700px){
+    nav{
+        flex-direction: column;
+    }
+
+    .first{
+        margin-right: 0;
+    }
+
+    .homePage{
+        padding-top: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .homePage img{
+        width: 0;
+        padding: 0;
+    }
+
+    .homePage{
+        width: 90%;
+    }
+
+    .homePage p{
+        padding: 0 90px 0 0;
+    }
+    
+    .aboutInfo{
+        width: 60%;
+        margin-left: 320px;
+    }
+
+    .aboutPage h1{
+        text-align: left;
+        margin-left: 320px;
+        padding: 0 50px;
+    }
+
+    .aboutInfo ul{
+        flex-direction: column;
+    }
+
+    #skills{
+        margin: 0;
+    }
+}
